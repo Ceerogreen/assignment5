@@ -154,6 +154,6 @@ def update_figure(selected_countries,selected_years): # function to update the f
 # %%
 # run app
 if __name__ == '__main__':
-    app.run(debug=True, port=8049)
+    app.run_server(debug=True, port=8049)
 
 
