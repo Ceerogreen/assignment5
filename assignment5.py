@@ -68,6 +68,7 @@ gdp_stack['gdp'] = gdp_stack['gdp'].astype(int) # Convert gdp to an integer
 # %%
 # initialize app
 app = Dash(__name__,external_stylesheets=stylesheets)
+server = app.server # Make app accessible as server for Render
 
 # Get list of years as integers
 years = list(gdp.columns)
