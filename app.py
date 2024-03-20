@@ -54,7 +54,7 @@ gdp = pd.read_csv('gdp_pcap.csv',index_col='country')
 stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 # %%
-# clean data
+# clean the data
 
 gdp_stack = gdp.stack().reset_index() # stacking to make the year a column, allowing easier subsetting
 gdp_stack.rename({'level_1':'year',0:'gdp'},axis=1,inplace=True) # changing column names to easier understand in later code
